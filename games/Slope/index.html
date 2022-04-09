@@ -1,3 +1,4 @@
+<div id="fullscreen">
 <!DOCTYPE html>
 <script>
     if (window.parent !== window.self) window.parent.postMessage("bonk", "*");
@@ -77,3 +78,17 @@
         </div>
     </body>
 </html>
+    </div>
+  <body>
+<button id="fullscreen-button" type="button"> <img src="https://i.ibb.co/LCWmKD3/FULLSCREEN.png" height ="80" width="80" /></button>
+<script>
+  var fullscreenButton = document.getElementById("fullscreen-button");
+  var fullscreenDiv = document.getElementById("fullscreen");
+  var fullscreenFunc = fullscreenDiv.requestFullscreen;
+  
+    function enterFullscreen() {
+      fullscreenFunc.call(fullscreenDiv);
+    }
+  
+    fullscreenButton.addEventListener('click', enterFullscreen);
+    </script>
