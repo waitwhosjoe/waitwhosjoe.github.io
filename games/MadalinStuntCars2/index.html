@@ -1,0 +1,24 @@
+<body>
+    <div id="button">
+      
+      <button id="fullscreen-button" type="button"> <img src="https://i.ibb.co/LCWmKD3/FULLSCREEN.png" height ="40" width="40" /></button>
+      
+      </div>
+    
+    <div id="fullscreen">
+        <iframe id="fullscreen" src= "https://625b4870bef9c262229e6455--incomparable-melomakarona-90e351.netlify.app/projects/madalin-stunt-cars-2/index.html"
+         frameborder="0" allowfullscreen="true" overflow="visible" width="100%vw" height="100%vh" frameborder="0"></iframe>
+    </div>
+    
+        <script>
+      var fullscreenButton = document.getElementById("fullscreen-button");
+      var fullscreenDiv = document.getElementById("fullscreen");
+      var fullscreenFunc = fullscreenDiv.requestFullscreen;
+      
+        function enterFullscreen() {
+          fullscreenFunc.call(fullscreenDiv);
+        }
+      
+        fullscreenButton.addEventListener('click', enterFullscreen);
+        </script>
+    </body> 
